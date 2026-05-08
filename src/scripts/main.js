@@ -29,7 +29,7 @@ tHead.addEventListener('click', (e) => {
     const maybeNum = parseFloat(contentA.replace(/[^0-9.-]+/g, ''));
     const maybeNum2 = parseFloat(contentB.replace(/[^0-9.-]+/g, ''));
 
-    if (!isNaN(maybeNum) || !isNaN(maybeNum2)) {
+    if (!isNaN(maybeNum) && !isNaN(maybeNum2)) {
       return maybeNum - maybeNum2;
     }
 
